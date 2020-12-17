@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --accent: rgb(131, 85, 15);
+    --dark: #8f897e;
+    --light: #f4f4f4;
+    --overlay: grey;
+    --ease: all 0.3s ease 0s;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+        background: linear-gradient(218deg, #302207, #4e1212, #594319, #0c3f32, #234842);
+    /*background-size: 400% 400%;*/
+    /*background-size: 600% 600%;*/
+    background-size: 400% 400%;
+     -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
+}
+
+p, button, h1, h4{
+
+    color: var(--light);
+}
+
+p, h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1, button{
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p, h4{
+    font-size: 18px;
+}
+button{
+    cursor: pointer;
+    transform: var(--ease);
+
+}
+button:hover{
+    transform: scale(1.02);
+}
+
+.wrapper{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "top_section"
+    "content_section"
+    
+    
+
+
+}
+.top_section{
+
+    grid-area: top_section;
+    min-width: 370px;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-areas: 
+    ". header .";
+      /*background: linear-gradient(to right, #3c3b3f, #605c3c);*/
+          
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header p{
+    max-width: 570px;
+    margin-bottom: 30px;
+}
+
+header button{
+    width: 131px;
+    padding: 12px 0;
+    background-color: var(--accent);
+    border: none;
+}
+
+header button:hover{
+    color: rgb(233, 233, 233);
+}
+
+
+.content_section{
+
+    grid-area: content_section;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-areas: 
+    ". playlist__one ."
+    ". playlist__two .";
+    margin-bottom: 60px;
+
+}
+
+.playlist__one{
+    grid-area: playlist__one;
+}
+
+.playlist__two{
+    grid-area: playlist__two;
+}
+
+
+.playlist__title{
+    margin: 30px 0;
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.video{
+    height: 180px;
+    grid-column-start: span 3;
+    position: relative;
+    transition: var(--ease);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.video:hover{
+    transform: scale(1.02);
+}
+.video i{
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--light);
+    opacity: 50%;
+    transition: var(--ease);
+}
+
+.video i:hover{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px){
+     .video{
+         grid-column-start: span 6;
+         height: 240px;
+     }
+    }
+
+     @media only screen and (max-width: 800px){
+        .video{
+            grid-column-start: span 12;
+        
+        }
+    }
+
+    .container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      }
+
+
+
+
+      
+      /* Then style the iframe to fit in the container div with full height and width */
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .responsive-iframe:hover {
+        transition: var(--ease);
+      }
+      footer {
+        background-color: #222;
+        color: #fff;
+        font-size: 14px;
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 999;
+    }
+    
+    footer p {
+        margin: 10px 0;
+    }
+    
+    footer i {
+        color: red;
+    }
+    
+
+

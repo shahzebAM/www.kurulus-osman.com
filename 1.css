@@ -1,0 +1,35 @@
+
+
+.container{
+	background-color: black;
+	border-radius: 
+}
+
+/**{
+	background-color: #3d3120
+}*/
+.table{
+	color: white
+}
+thead{
+	background-color: #4a4234;
+
+}
+tbody{
+	background-color: #736958
+}
+.btn{
+	background-color: #cfac74;
+	font-size: 14px
+}
+a{
+	color: black;
+}
+a:hover{
+	color: black;
+}
+
+
+
+
+
