@@ -242,7 +242,8 @@ header button:hover{
     }
     
     footer p {
-        margin: 10px 0;
+        margin: 1px 0;
+        font-size: 15px;
     }
     
     footer i {
