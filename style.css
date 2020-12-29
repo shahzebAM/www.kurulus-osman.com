@@ -89,21 +89,7 @@ button:hover{
 
 
 }
-.top_section{
 
-    grid-area: top_section;
-    min-width: 370px;
-    display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-template-areas: 
-    ". header .";
-      /*background: linear-gradient(to right, #3c3b3f, #605c3c);*/
-          
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
 
 header{
     grid-area: header;
@@ -250,6 +236,13 @@ header button:hover{
         color: red;
     }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
     
 
 
