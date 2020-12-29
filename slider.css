@@ -1,0 +1,20 @@
+.carousel-control-prev-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-color: black;
+   
+    border-radius: 0%;
+    border: 2px solid red;
+}
+
+
+.carousel-control-next-icon{
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-color: black;
+   
+    border-radius: 0%;
+    border: 2px solid red;
+}
