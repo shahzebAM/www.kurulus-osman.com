@@ -28,12 +28,7 @@ a{
 a:hover{
 	color: black;
 }
-#responsive {
-    display: inline-grid;
-    position: relative;
-    width: 100%;
-    background-size: contain;
-}
+
 
 
 
