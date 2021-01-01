@@ -183,9 +183,23 @@ header button:hover{
      }
     }
 
+    @media only screen and (max-width: 1600px){
+     .video{
+         grid-column-start: span 6;
+         height: 300px;
+     }
+    }
+
      @media only screen and (max-width: 800px){
         .video{
-            grid-column-start: span 12;
+            grid-column-start: span 6;
+        
+        }
+    }
+
+         @media only screen and (max-width: 1080px){
+        .video{
+            grid-column-start: span 6;
         
         }
     }
