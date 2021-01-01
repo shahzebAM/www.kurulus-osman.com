@@ -28,7 +28,12 @@ a{
 a:hover{
 	color: black;
 }
-@media (min-width: 768px) and (max-width: 1199.98px) {  }
+#responsive {
+    display: inline-grid;
+    position: relative;
+    width: 100%;
+    background-size: contain;
+}
 
 
 
